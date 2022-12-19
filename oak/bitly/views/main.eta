@@ -1,0 +1,10 @@
+<h1>My url shortener!</h1>
+
+<form method = "POST" action ="/">
+  <input type = "text" name = "url" />
+  <input type = "submit" value ="shorten!"/>
+</form>
+
+<% if (it.url && it.shortened) { %>
+  <h1> <a href = "<% =it.url %>"><% =it.url %></a> <br>is now at <a href = "/<% =it.shortened %>">http://localhost:7777/<% =it.shortened %> </a></h1>
+<%}%>
